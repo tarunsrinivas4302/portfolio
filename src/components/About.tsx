@@ -15,7 +15,7 @@ const About = () => {
             {/* <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur-2xl opacity-20" /> */}
             <div className="absolute -inset-4  rounded-xl blur-2xl opacity-20" />
             <img
-              src="/profile.png"
+              src="/profile.jpg"
               alt="Profile"
               className="relative rounded-xl shadow-2xl w-full max-w-md mx-auto"
             />
