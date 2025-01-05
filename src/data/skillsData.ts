@@ -11,6 +11,7 @@ export const skillsData = [
   { name: 'PHP', category: 'Backend' },
   { name: 'AWS', category: 'Backend' },
   { name: 'JavaScript', category: 'Languages' },
+  { name: 'TypeScript', category: 'Languages' },
   { name: 'PHP', category: 'Languages' },
   { name: 'Core Java', category: 'Languages' },
   { name: 'Git', category: 'DevOps' },
