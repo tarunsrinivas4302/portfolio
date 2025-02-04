@@ -12,12 +12,10 @@ const About = () => {
             viewport={{ once: true }}
             className="relative"
           >
-            {/* <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl blur-2xl opacity-20" /> */}
-            <div className="absolute -inset-4  rounded-xl blur-2xl opacity-20" />
             <img
               src="/profile.jpg"
               alt="Profile"
-              className="relative rounded-xl shadow-2xl w-full max-w-md mx-auto"
+              className="relative rounded-full  object-cover  shadow-2xl w-full max-w-md mx-auto"
             />
           </motion.div>
 
@@ -34,8 +32,9 @@ const About = () => {
               user-friendly web applications. My expertise lies in crafting
               seamless UI experiences with modern technologies like React, HTML,
               CSS, and JavaScript, while also maintaining a solid understanding
-              of backend development to create robust and scalable solutions. 
-              </p><p className="text-lg text-gray-600 leading-relaxed ">
+              of backend development to create robust and scalable solutions.
+            </p>
+            <p className="text-lg text-gray-600 leading-relaxed ">
               I thrive in bridging the gap between design and functionality,
               ensuring that every product I work on is not just visually
               appealing but also efficient and reliable. With a passion for
