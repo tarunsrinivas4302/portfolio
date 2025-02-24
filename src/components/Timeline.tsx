@@ -48,7 +48,7 @@ const Timeline: React.FC<TimelineProps> = ({ items, title }) => {
               >
                 {/* Content */}
                 <div
-                  className={`w-1/2 max-sm:w-full ${
+                  className={`w-1/2 ${
                     index % 2 === 0 ? "pr-12 text-right" : "pl-12"
                   }`}
                 >
