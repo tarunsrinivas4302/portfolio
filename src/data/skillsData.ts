@@ -9,7 +9,7 @@ export const skillsData = [
   { name: 'Express.js', category: 'Backend' },
   { name: 'Rest APIs', category: 'Backend' },
   { name: 'PHP', category: 'Backend' },
-  { name: 'Redis', category: 'Backend' },
+  { name: 'RabbitMQ', category: 'Backend' },
   { name: 'JavaScript', category: 'Languages' },
   { name: 'TypeScript', category: 'Languages' },
   { name: 'PHP', category: 'Languages' },
@@ -23,4 +23,5 @@ export const skillsData = [
   { name: 'VsCode', category: 'Tools' },
   { name: 'Linux', category: 'Tools' },
   { name: 'Windows', category: 'Tools' },
+  { name: 'PostMan', category: 'Tools' },
 ];
