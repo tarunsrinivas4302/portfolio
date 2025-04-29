@@ -27,14 +27,12 @@ const Hero = () => {
             className="mb-8 space-y-6"
           >
             <div className="inline-block px-4 py-2 bg-gray-800/50 rounded-full mb-4">
-              <span className="text-blue-400 font-medium">Welcome to my portfolio</span>
             </div>
             <h1 className="text-7xl font-bold mb-6 leading-tight">
               <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Transforming Ideas
+                Tarun Srinivas Putchala
               </span>
               <br />
-              <span className="text-white">Into Digital Reality</span>
             </h1>
             <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
               Full Stack Developer specializing in crafting beautiful and functional web experiences with modern technologies
@@ -78,3 +76,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

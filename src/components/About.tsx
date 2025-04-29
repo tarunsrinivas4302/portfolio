@@ -27,8 +27,8 @@ const About = () => {
           >
             <h2 className="text-3xl font-bold text-gray-800">About Me</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
-              Hello, I'm Tarun Srinivas! I’m a Junior Software Developer with 1
-              year and 7 months of hands-on experience in building dynamic,
+              Hello, I'm Tarun Srinivas! I’m a Junior Software Developer with Over 2 years 
+              of hands-on experience in building dynamic,
               user-friendly web applications. My expertise lies in crafting
               seamless UI experiences with modern technologies like React, HTML,
               CSS, and JavaScript, while also maintaining a solid understanding
