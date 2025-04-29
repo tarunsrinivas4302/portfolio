@@ -37,7 +37,7 @@ const Header = () => {
             animate={{ opacity: 1 }}
             className="text-2xl font-bold text-indigo-600"
           >
-            Portofolio
+            <img src='/logo.jpg' alt="TS"/>
           </motion.div>
 
           {/* Desktop Navigation */}
