@@ -1,79 +1,69 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Download, ChevronDown } from 'lucide-react';
+import { motion } from "framer-motion";
+import { Download, ChevronDown } from "lucide-react";
 
 const Hero = () => {
   const handleDownloadCV = () => {
-    const resumeUrl = '/resume.pdf';
-    window.open(resumeUrl, '_blank');
+    window.open("/resume.pdf", "_blank");
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-gray-900">
-      {/* Gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-purple-500/10 to-pink-500/10" />
-      
-      <div className="container mx-auto px-6 relative z-10">
-        <motion.div 
-          initial={{ opacity: 0, y: 30 }}
+    <section className="relative min-h-screen flex flex-col justify-center items-center bg-[#0A0A0F] overflow-hidden">
+      {/* Animated background gradient */}
+      <motion.div
+        className="absolute inset-0 bg-[radial-gradient(circle_at_20%_30%,#3a7cff33,transparent_60%),radial-gradient(circle_at_80%_70%,#ff3ab466,transparent_60%)] animate-pulse-slow"
+      />
+
+      <div className="relative z-10 text-center px-6">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-          className="text-center max-w-4xl mx-auto"
+          transition={{ duration: 1 }}
+          className="text-6xl md:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 mb-6"
         >
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.8 }}
-            className="mb-8 space-y-6"
-          >
-            <div className="inline-block px-4 py-2 bg-gray-800/50 rounded-full mb-4">
-            </div>
-            <h1 className="text-7xl font-bold mb-6 leading-tight">
-              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Tarun Srinivas Putchala
-              </span>
-              <br />
-            </h1>
-            <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Full Stack Developer specializing in crafting beautiful and functional web experiences with modern technologies
-            </p>
-          </motion.div>
+          Tarun Srinivas
+        </motion.h1>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+          className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed mb-10"
+        >
+          Full Stack Developer crafting elegant, performant, and futuristic web applications with modern technologies.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+          className="flex flex-col sm:flex-row justify-center gap-4"
+        >
+          <button
+            onClick={handleDownloadCV}
+            className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-xl hover:shadow-2xl transition-transform hover:-translate-y-1"
           >
-            <button 
-              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
-            >
-              <span className="relative z-10">Get in Touch</span>
-              <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
-            </button>
-            <button 
-              onClick={handleDownloadCV}
-              className="group flex items-center space-x-2 px-8 py-4 border-2 border-gray-700 text-gray-300 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all duration-300 hover:-translate-y-1"
-            >
-              <Download className="group-hover:animate-bounce" size={20} />
-              <span>Download CV</span>
-            </button>
-          </motion.div>
+            <Download className="inline mr-2 animate-bounce" />
+            Download CV
+          </button>
+          <a
+            href="#about"
+            className="px-8 py-4 border-2 border-gray-700 text-gray-300 rounded-full hover:border-blue-400 hover:text-blue-400 transition-all"
+          >
+            Explore →
+          </a>
         </motion.div>
-      </div>
 
-      <motion.div 
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1, duration: 0.8 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+       
+      </div>
+         <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-500"
+        animate={{ y: [0, 10, 0] }}
+        transition={{ repeat: Infinity, duration: 2 }}
       >
-        <ChevronDown className="w-6 h-6 text-gray-400 animate-bounce" />
+        ↓ Scroll
       </motion.div>
-    </div>
+    </section>
   );
 };
 
 export default Hero;
-
